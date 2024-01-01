@@ -1,0 +1,35 @@
+<p class="instructions">
+  El juego de la vida consiste en tres reglas <br />
+   Cada celula tiene tener 3 estados: Nace, vive, muere. <br />
+  <strong>1. Nace:</strong> Una celula muerta nace si tiene exactamente 3
+  celulas vecinas vivas, es decir, al siguiente turno estara viva. <br />
+  <strong>2. Vive:</strong> Una celula se mantiene viva si tiene 2 o 3 vecinos
+  vivos a su alrededor. <br />
+  <strong>3. Muere:</strong> Una celula muere por sobrepoblacion si tiene mas de
+  3 vecinos alrededor; una celula muere por aislamiento si tiene un solo vecino
+  o ninguno alrededor. <br />
+</p>
+
+<style>
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+</style>
